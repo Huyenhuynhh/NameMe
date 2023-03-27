@@ -1,0 +1,38 @@
+import React from 'react';
+import { View, Image, StyleSheet } from 'react-native';
+import { TextInput } from 'react-native-gesture-handler';
+
+const RegisterScreen = () => {
+
+    const onSubmit = () => {
+        // handle submit 
+    }
+
+    return (
+        <View style={styles.container}>
+            <Image
+                style={styles.logo}
+                source={require('../assets/newlogo.png')}
+            />
+            <TextInput style={styles./>
+            // add more components here
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'flex-start',
+        backgroundColor: '#FFFFFF',
+    },
+    logo: {
+        width: 322,
+        height: 271,
+        borderRadius: 0,
+        marginTop: 82,
+        marginLeft: 34,
+    },
+})
+
+export default RegisterScreen;
